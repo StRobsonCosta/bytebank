@@ -1,6 +1,12 @@
-<app-nova-transferencia (aoTransferir) = "transferir($event)"></app-nova-transferencia>
+<header>
+  <a routerLink="extrato">Bytebank</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova Transferência</a>
+</header>
 
-<app-extrato [transferencias]="transferencias"></app-extrato>
+<main>
+  <router-outlet></router-outlet>
+</main>
+
 
 
 
